@@ -22,7 +22,7 @@ public class LogoutServlet extends HttpServlet {
             session.invalidate();
         }
         
-        // Redirect to home page with logout status
+    
         response.sendRedirect("index.html?status=logout");
     }
     
