@@ -20,7 +20,7 @@ public class RegisterServlet extends HttpServlet {
         String email = request.getParameter("email");
         String password = request.getParameter("password");
         
-        // Check if email already exists
+        
         User existingUser = DatabaseManager.findUserByEmail(email);
         if (existingUser != null) {
             // Email already registered
