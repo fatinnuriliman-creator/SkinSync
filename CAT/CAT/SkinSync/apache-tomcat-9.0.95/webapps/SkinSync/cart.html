@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Bag - SkinSync</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        /* CSS KHAS UNTUK CART (Boleh letak sini atau dalam style.css) */
+        .page-header {
+            text-align: center;
+            padding: 60px 20px 40px;
+            background-color: #f9f7f2;
+        }
+        .cart-layout {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+            margin-top: 40px;
+            margin-bottom: 80px;
+        }
+        
+        /* List Barang */
+        .cart-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+            border: 1px solid #eee;
+        }
+        .cart-item img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+        .item-details h4 { font-size: 1.1rem; margin-bottom: 5px; color: var(--text-dark); }
+        .item-price { color: var(--primary-dark); font-weight: 600; }
+        
+        /* Quantity Controls */
+        .qty-control {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: #f4f4f4;
+            padding: 5px 10px;
+            border-radius: 20px;
+        }
+        .qty-btn { border: none; background: transparent; cursor: pointer; font-weight: bold; width: 25px;}
+        .qty-val { font-size: 14px; font-weight: 600; min-width: 20px; text-align: center;}
+        .remove-btn { color: #ff6b6b; cursor: pointer; border: none; background: none; font-size: 20px; margin-left: 15px; }
+
+        /* Summary Box (Sebelah Kanan) */
+        .summary-card {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 100px;
+            height: fit-content;
+        }
+        .summary-row { display: flex; justify-content: space-between; margin-bottom: 15px; font-size: 0.95rem; color: #666; }
+        .summary-total { display: flex; justify-content: space-between; margin-top: 20px; padding-top: 20px; border-top: 2px solid #f4f4f4; font-weight: 700; font-size: 1.2rem; color: var(--text-dark); }
+        
+        @media (max-width: 768px) {
+            .cart-layout { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">SkinSync.</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#products">Products</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li id="nav-cart" style="font-weight: 700; color: var(--primary);">Cart <span class="cart-count">0</span></li>
+            <li><a href="login.html" class="btn-login">Login</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <h1>Your Shopping Bag</h1>
+        <p>Free shipping on orders over RM 100</p>
+    </div>
+
+    <div class="container cart-layout">
+        
+        <div id="cartItems">
+            <p style="text-align:center; margin-top:20px;">Loading your items...</p>
+        </div>
+
+        <div class="summary-card">
+                    <h3>Order Summary</h3>
+                    <br>
+                    <div class="summary-row">
+                        <span>Subtotal</span>
+                        <span id="subtotal">RM 0.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Shipping Fee</span>
+                        <span id="shipping">RM 0.00</span>
+                    </div>
+                    
+                    <hr style="margin: 15px 0; border: 0; border-top: 1px solid #eee;">
+
+                    <div class="summary-total" style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-size: 1rem; color: #555;">Total Payment</span>
+                        <span id="total" style="font-size: 1.5rem; color: var(--primary-dark);">RM 0.00</span>
+                    </div>
+                    
+                    <p style="font-size: 12px; color: #888; margin-bottom: 20px; text-align: right;">
+                        (Free shipping for orders above RM 100)
+                    </p>
+                    
+                    <form action="CheckoutServlet" method="POST" id="checkoutForm">
+                        <input type="hidden" name="cartData" id="hiddenCartData">
+                        <input type="hidden" name="totalPayment" id="hiddenTotalPayment">
+                        
+                        <button type="button" onclick="processCheckout()" class="btn btn-primary" style="width:100%; border-radius: 10px; padding: 12px;">
+                            Proceed to Checkout
+                        </button>
+                    </form>
+
+                    <a href="index.html" style="display:block; text-align:center; margin-top:15px; font-size:0.9rem; color:#888;">Continue Shopping</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 SkinSync. Personalized Skincare Solutions.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/session.js"></script>
+    <script>
+        // Fungsi ini jalan bila user tekan 'Checkout'
+        function processCheckout() {
+            // 1. Ambil data dari LocalStorage
+            const cartData = localStorage.getItem('skinsync_cart');
+            const totalText = document.getElementById('total').textContent.replace('RM ', '');
+            // 2. Check kalau cart kosong
+            if(!cartData || JSON.parse(cartData).length === 0) {
+                alert("Your cart is empty!");
+                return;
+            }
+
+            // 3. Masukkan data ke dalam hidden input form
+            document.getElementById('hiddenCartData').value = cartData;
+
+            // 4. Submit form secara manual ke Java Servlet
+            document.getElementById('checkoutForm').submit();
+        }
+    </script>
+
+</body>
+</html>

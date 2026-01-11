@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkinSync - Personalized Skincare</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">SkinSync.</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#products">Products</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            
+            <li id="nav-cart" onclick="window.location.href='cart.html'" style="cursor: pointer;">
+                Cart <span class="cart-count">0</span>
+            </li>
+            
+            <li><a href="login.html" class="btn-login" style="background:var(--text-dark); color:white;">Login</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Unlock Your Best Skin</h1>
+            <p class="hero-subtitle">Personalized care, science-backed results. Discover the routine that syncs with you.</p>
+            <div class="hero-buttons">
+                <a href="quiz.html" class="btn btn-primary">Take the Skin Quiz</a>
+                <button class="btn btn-outline" onclick="document.querySelector('.products-section').scrollIntoView({behavior: 'smooth'});">Shop All</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="gallery-section container">
+        <div class="section-header">
+            <h2>Our Philosophy</h2>
+            <p>We believe in transparency and ingredients that work.</p>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-card">
+                <img src="images/natural-ingredients.png" alt="Natural Ingredients">
+                <div class="overlay"><h4>Natural</h4></div>
+            </div>
+            <div class="gallery-card">
+                <img src="images/science-backed.png" alt="Science Backed">
+                <div class="overlay"><h4>Science-Backed</h4></div>
+            </div>
+            <div class="gallery-card">
+                <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Cruelty Free">
+                <div class="overlay"><h4>Cruelty Free</h4></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="quiz-section">
+        <div class="container quiz-container">
+            <div class="quiz-text">
+                <h3>Not sure what you need?</h3>
+                <p>Select your skin type and let our AI recommend the perfect routine for you.</p>
+            </div>
+            <div class="quiz-form">
+                <a href="quiz.html" class="btn btn-dark" style="text-decoration:none; display:inline-block; text-align:center;">Start Skin Analysis</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="products-section container">
+    <div class="section-header">
+        <h2>Shop Our Collection</h2>
+            <p>Curated essentials for every skin type</p>
+        </div>
+        
+        <div class="carousel-wrapper" style="position: relative;">
+         
+            <button class="carousel-btn prev-btn" id="prevBtn">&#10094;</button>
+
+            <div class="product-carousel" id="productCarousel">
+            <div class="product-card">
+                <div class="product-image"><img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=300&q=80"></div>
+                <div class="product-info">
+                    <h3>Salicylic Acid Cleanser</h3>
+                    <p class="desc">Deep cleans pores</p>
+                    <div class="price-row"><span class="price">RM 45.00</span><button class="btn-icon">+</button></div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"><img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=300&q=80"></div>
+                <div class="product-info">
+                    <h3>Pore Refining Toner</h3>
+                    <p class="desc">Tightens pores</p>
+                    <div class="price-row"><span class="price">RM 35.00</span><button class="btn-icon">+</button></div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"><img src="images/niacinamide-10 .png" alt="Niacinamide Serum"></div>
+                <div classspan class="tag">Bestseller</span></div>
+                <div class="product-info">
+                    <h3>Niacinamide Serum 10%</h3>
+                    <p class="desc">Controls oil production</p>
+                    <div class="price-row"><span class="price">RM 55.00</span><button class="btn-icon">+</button></div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"><img src="https://images.unsplash.com/photo-1629198688000-71f23e745b6e?auto=format&fit=crop&w=300&q=80"></div>
+                <div class="product-info">
+                    <h3>Oil-Free Gel Moisturizer</h3>
+                    <p class="desc">Hydrates without grease</p>
+                    <div class="price-row"><span class="price">RM 40.00</span><button class="btn-icon">+</button></div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"><img src="images/matte-sunscreen.png" alt="Matte Sunscreen SPF50"></div>
+                <div class="product-info">
+                    <h3>Matte Sunscreen SPF50</h3>
+                    <p class="desc">Non-shiny protection</p>
+                    <div class="price-row"><span class="price">RM 60.00</span><button class="btn-icon">+</button></div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"><img src="images/claydetox.png" alt="Clay Detox Mask"></div>
+                <div class="product-info">
+                    <h3>Clay Detox Mask</h3>
+                    <p class="desc">Absorbs excess sebum</p>
+                    <div class="price-row"><span class="price">RM 50.00</span><button class="btn-icon">+</button></div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"><img src="https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?auto=format&fit=crop&w=300&q=80"></div>
+                <div class="product-info">
+                    <h3>Acne Spot Treatment</h3>
+                    <p class="desc">Targets active pimples</p>
+                    <div class="price-row"><span class="price">RM 25.00</span><button class="btn-icon">+</button></div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"><img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=300&q=80"></div>
+                <div class="product-info">
+                    <h3>Oil Blotting Sheets</h3>
+                    <p class="desc">Instant shine control</p>
+                    <div class="price-row"><span class="price">RM 15.00</span><button class="btn-icon">+</button></div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"><img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=300&q=80"></div>
+                <div class="product-info">
+                    <h3>Milky Cream Cleanser</h3>
+                    <p class="desc">Gentle non-stripping wash</p>
+                    <div class="price-row"><span class="price">RM 49.00</span><button class="btn-icon">+</button></div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"><img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=300&q=80"></div>
+                <div class="product-info">
+                    <h3>Hydrating Essence Toner</h3>
+                    <p class="desc">Preps skin for moisture</p>
+                    <div class="price-row"><span class="price">RM 59.00</span><button class="btn-icon">+</button></div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"><img src="https://images.unsplash.com/photo-1629198688000-71f23e745b6e?auto=format&fit=crop&w=300&q=80"><span class="tag">Top Rated</span></div>
+                <div class="product-info">
+                    <h3>Vitamin C Glow Serum</h3>
+                    <p class="desc">Brightens complexion</p>
+                    <div class="price-row"><span class="price">RM 89.00</span><button class="btn-icon">+</button></div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"><img src="images/hyalunoric-acid.png" alt="Hyaluronic Acid Booster"></div>
+                <div class="product-info">
+                    <h3>Hyaluronic Acid Booster</h3>
+                    <p class="desc">Plumps skin with water</p>
+                    <div class="price-row"><span class="price">RM 75.00</span><button class="btn-icon">+</button></div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"><img src="images/night-cream.png" alt="Night Cream"></div>
+                <div class="product-info">
+                    <h3>Rich Night Repair Cream</h3>
+                    <p class="desc">Deep overnight repair</p>
+                    <div class="price-row"><span class="price">RM 120.00</span><button class="btn-icon">+</button></div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"><img src="images/facial oil.png" alt="Rose Hip Facial Oil"></div>
+                <div class="product-info">
+                    <h3>Rose Hip Facial Oil</h3>
+                    <p class="desc">Locks in moisture</p>
+                    <div class="price-row"><span class="price">RM 65.00</span><button class="btn-icon">+</button></div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"><img src="https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?auto=format&fit=crop&w=300&q=80"></div>
+                <div class="product-info">
+                    <h3>Dewy Sunscreen SPF40</h3>
+                    <p class="desc">Glowy finish protection</p>
+                    <div class="price-row"><span class="price">RM 55.00</span><button class="btn-icon">+</button></div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"><img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=300&q=80"></div>
+                <div class="product-info">
+                    <h3>Overnight Sleeping Mask</h3>
+                    <p class="desc">Intense hydration boost</p>
+                    <div class="price-row"><span class="price">RM 80.00</span><button class="btn-icon">+</button></div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"><img src="images/gentle cleanser.png" alt="Gentle Daily Cleanser"></div>
+                <div class="product-info">
+                    <h3>Gentle Daily Cleanser</h3>
+                    <p class="desc">Safe for daily use</p>
+                    <div class="price-row"><span class="price">RM 39.00</span><button class="btn-icon">+</button></div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"><img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=300&q=80"></div>
+                <div class="product-info">
+                    <h3>Balancing Toner</h3>
+                    <p class="desc">Restores pH balance</p>
+                    <div class="price-row"><span class="price">RM 45.00</span><button class="btn-icon">+</button></div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"><img src="images/all-in-one-serum.png" alt="all-in-one-serum"></div>
+                <div class="product-info">
+                    <h3>All-In-One Serum</h3>
+                    <p class="desc">Multi-purpose care</p>
+                    <div class="price-row"><span class="price">RM 70.00</span><button class="btn-icon">+</button></div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"><img src="https://images.unsplash.com/photo-1629198688000-71f23e745b6e?auto=format&fit=crop&w=300&q=80"></div>
+                <div class="product-info">
+                    <h3>Daily Light Moisturizer</h3>
+                    <p class="desc">Lightweight hydration</p>
+                    <div class="price-row"><span class="price">RM 50.00</span><button class="btn-icon">+</button></div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"><img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=300&q=80"></div>
+                <div class="product-info">
+                    <h3>Invisible Sunscreen SPF50</h3>
+                    <p class="desc">No white cast</p>
+                    <div class="price-row"><span class="price">RM 60.00</span><button class="btn-icon">+</button></div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"><img src="images/brightening-eye-cream.png" alt="Brightening Eye Cream"></div>
+                <div class="product-info">
+                    <h3>Brightening Eye Cream</h3>
+                    <p class="desc">Reduces dark circles</p>
+                    <div class="price-row"><span class="price">RM 45.00</span><button class="btn-icon">+</button></div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"><img src="https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?auto=format&fit=crop&w=300&q=80"></div>
+                <div class="product-info">
+                    <h3>Gentle Face Scrub</h3>
+                    <p class="desc">Weekly exfoliation</p>
+                    <div class="price-row"><span class="price">RM 35.00</span><button class="btn-icon">+</button></div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"><img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=300&q=80"></div>
+                <div class="product-info">
+                    <h3>Hydrating Lip Balm</h3>
+                    <p class="desc">Softens lips</p>
+                    <div class="price-row"><span class="price">RM 20.00</span><button class="btn-icon">+</button></div>
+                </div>
+            </div>
+            </div>
+            <button class="carousel-btn next-btn" id="nextBtn">&#10095;</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 SkinSync. Personalized Skincare Solutions.</p>
+            <div class="socials">
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/session.js"></script>
+</body>
+</html>

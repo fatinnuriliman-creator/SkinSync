@@ -1,0 +1,94 @@
+11-Jan-2026 13:40:04.620 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.95
+11-Jan-2026 13:40:04.623 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Sep 13 2024 18:07:47 UTC
+11-Jan-2026 13:40:04.625 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.95.0
+11-Jan-2026 13:40:04.625 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+11-Jan-2026 13:40:04.626 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+11-Jan-2026 13:40:04.627 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+11-Jan-2026 13:40:04.627 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-25
+11-Jan-2026 13:40:04.628 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           25+37-LTS-3491
+11-Jan-2026 13:40:04.629 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+11-Jan-2026 13:40:04.631 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\pc\Downloads\CAT\CAT\SkinSync\apache-tomcat-9.0.95
+11-Jan-2026 13:40:04.632 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\pc\Downloads\CAT\CAT\SkinSync\apache-tomcat-9.0.95
+11-Jan-2026 13:40:04.640 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+11-Jan-2026 13:40:04.641 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+11-Jan-2026 13:40:04.641 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+11-Jan-2026 13:40:04.641 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+11-Jan-2026 13:40:04.641 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+11-Jan-2026 13:40:04.641 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\pc\Downloads\CAT\CAT\SkinSync\apache-tomcat-9.0.95\conf\logging.properties
+11-Jan-2026 13:40:04.641 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+11-Jan-2026 13:40:04.642 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+11-Jan-2026 13:40:04.642 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+11-Jan-2026 13:40:04.642 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+11-Jan-2026 13:40:04.642 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\pc\Downloads\CAT\CAT\SkinSync\apache-tomcat-9.0.95
+11-Jan-2026 13:40:04.642 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\pc\Downloads\CAT\CAT\SkinSync\apache-tomcat-9.0.95
+11-Jan-2026 13:40:04.643 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\pc\Downloads\CAT\CAT\SkinSync\apache-tomcat-9.0.95\temp
+11-Jan-2026 13:40:04.651 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.3.1] using APR version [1.7.4].
+11-Jan-2026 13:40:04.652 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+11-Jan-2026 13:40:04.652 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+11-Jan-2026 13:40:04.663 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+11-Jan-2026 13:40:05.091 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+11-Jan-2026 13:40:05.123 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [781] milliseconds
+11-Jan-2026 13:40:05.170 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+11-Jan-2026 13:40:05.170 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.95]
+11-Jan-2026 13:40:05.183 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\pc\Downloads\CAT\CAT\SkinSync\apache-tomcat-9.0.95\webapps\docs]
+11-Jan-2026 13:40:05.545 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\pc\Downloads\CAT\CAT\SkinSync\apache-tomcat-9.0.95\webapps\docs] has finished in [359] ms
+11-Jan-2026 13:40:05.546 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\pc\Downloads\CAT\CAT\SkinSync\apache-tomcat-9.0.95\webapps\examples]
+11-Jan-2026 13:40:06.303 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\pc\Downloads\CAT\CAT\SkinSync\apache-tomcat-9.0.95\webapps\examples] has finished in [757] ms
+11-Jan-2026 13:40:06.386 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\pc\Downloads\CAT\CAT\SkinSync\apache-tomcat-9.0.95\webapps\host-manager]
+11-Jan-2026 13:40:06.470 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\pc\Downloads\CAT\CAT\SkinSync\apache-tomcat-9.0.95\webapps\host-manager] has finished in [84] ms
+11-Jan-2026 13:40:06.471 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\pc\Downloads\CAT\CAT\SkinSync\apache-tomcat-9.0.95\webapps\manager]
+11-Jan-2026 13:40:06.537 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\pc\Downloads\CAT\CAT\SkinSync\apache-tomcat-9.0.95\webapps\manager] has finished in [67] ms
+11-Jan-2026 13:40:06.538 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\pc\Downloads\CAT\CAT\SkinSync\apache-tomcat-9.0.95\webapps\ROOT]
+11-Jan-2026 13:40:06.588 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\pc\Downloads\CAT\CAT\SkinSync\apache-tomcat-9.0.95\webapps\ROOT] has finished in [50] ms
+11-Jan-2026 13:40:06.589 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\pc\Downloads\CAT\CAT\SkinSync\apache-tomcat-9.0.95\webapps\SkinSync]
+11-Jan-2026 13:40:06.885 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+11-Jan-2026 13:40:06.900 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\pc\Downloads\CAT\CAT\SkinSync\apache-tomcat-9.0.95\webapps\SkinSync] has finished in [310] ms
+11-Jan-2026 13:40:06.908 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+11-Jan-2026 13:40:06.947 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1821] milliseconds
+11-Jan-2026 16:34:58.733 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.95
+11-Jan-2026 16:34:58.736 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Sep 13 2024 18:07:47 UTC
+11-Jan-2026 16:34:58.736 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.95.0
+11-Jan-2026 16:34:58.736 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+11-Jan-2026 16:34:58.736 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+11-Jan-2026 16:34:58.738 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+11-Jan-2026 16:34:58.738 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-25
+11-Jan-2026 16:34:58.738 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           25+37-LTS-3491
+11-Jan-2026 16:34:58.739 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+11-Jan-2026 16:34:58.739 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\pc\Downloads\CAT\CAT\SkinSync\apache-tomcat-9.0.95
+11-Jan-2026 16:34:58.739 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\pc\Downloads\CAT\CAT\SkinSync\apache-tomcat-9.0.95
+11-Jan-2026 16:34:58.750 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+11-Jan-2026 16:34:58.751 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+11-Jan-2026 16:34:58.751 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+11-Jan-2026 16:34:58.752 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+11-Jan-2026 16:34:58.752 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+11-Jan-2026 16:34:58.752 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\pc\Downloads\CAT\CAT\SkinSync\apache-tomcat-9.0.95\conf\logging.properties
+11-Jan-2026 16:34:58.752 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+11-Jan-2026 16:34:58.753 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+11-Jan-2026 16:34:58.753 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+11-Jan-2026 16:34:58.753 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+11-Jan-2026 16:34:58.753 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\pc\Downloads\CAT\CAT\SkinSync\apache-tomcat-9.0.95
+11-Jan-2026 16:34:58.753 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\pc\Downloads\CAT\CAT\SkinSync\apache-tomcat-9.0.95
+11-Jan-2026 16:34:58.753 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\pc\Downloads\CAT\CAT\SkinSync\apache-tomcat-9.0.95\temp
+11-Jan-2026 16:34:58.761 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.3.1] using APR version [1.7.4].
+11-Jan-2026 16:34:58.762 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+11-Jan-2026 16:34:58.762 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+11-Jan-2026 16:34:58.773 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+11-Jan-2026 16:34:59.100 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+11-Jan-2026 16:34:59.125 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [740] milliseconds
+11-Jan-2026 16:34:59.167 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+11-Jan-2026 16:34:59.167 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.95]
+11-Jan-2026 16:34:59.175 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\pc\Downloads\CAT\CAT\SkinSync\apache-tomcat-9.0.95\webapps\docs]
+11-Jan-2026 16:34:59.505 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\pc\Downloads\CAT\CAT\SkinSync\apache-tomcat-9.0.95\webapps\docs] has finished in [327] ms
+11-Jan-2026 16:34:59.506 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\pc\Downloads\CAT\CAT\SkinSync\apache-tomcat-9.0.95\webapps\examples]
+11-Jan-2026 16:35:00.532 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\pc\Downloads\CAT\CAT\SkinSync\apache-tomcat-9.0.95\webapps\examples] has finished in [1,026] ms
+11-Jan-2026 16:35:00.533 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\pc\Downloads\CAT\CAT\SkinSync\apache-tomcat-9.0.95\webapps\host-manager]
+11-Jan-2026 16:35:00.607 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\pc\Downloads\CAT\CAT\SkinSync\apache-tomcat-9.0.95\webapps\host-manager] has finished in [74] ms
+11-Jan-2026 16:35:00.607 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\pc\Downloads\CAT\CAT\SkinSync\apache-tomcat-9.0.95\webapps\manager]
+11-Jan-2026 16:35:00.663 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\pc\Downloads\CAT\CAT\SkinSync\apache-tomcat-9.0.95\webapps\manager] has finished in [55] ms
+11-Jan-2026 16:35:00.663 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\pc\Downloads\CAT\CAT\SkinSync\apache-tomcat-9.0.95\webapps\ROOT]
+11-Jan-2026 16:35:00.786 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\pc\Downloads\CAT\CAT\SkinSync\apache-tomcat-9.0.95\webapps\ROOT] has finished in [122] ms
+11-Jan-2026 16:35:00.786 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\pc\Downloads\CAT\CAT\SkinSync\apache-tomcat-9.0.95\webapps\SkinSync]
+11-Jan-2026 16:35:00.999 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+11-Jan-2026 16:35:01.007 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\pc\Downloads\CAT\CAT\SkinSync\apache-tomcat-9.0.95\webapps\SkinSync] has finished in [221] ms
+11-Jan-2026 16:35:01.014 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+11-Jan-2026 16:35:01.048 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1920] milliseconds
